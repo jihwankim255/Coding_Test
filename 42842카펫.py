@@ -1,3 +1,8 @@
+'''
+https://school.programmers.co.kr/learn/courses/30/lessons/42842
+Lv. 2	40,836명	71%
+'''
+
 import math
 def test(a):
     if len(a) % 2:

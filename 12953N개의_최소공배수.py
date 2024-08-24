@@ -1,3 +1,7 @@
+'''
+https://school.programmers.co.kr/learn/courses/30/lessons/12953
+Lv.2 68%
+'''
 def solution(arr):
     answer = 1
     num = dict()

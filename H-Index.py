@@ -1,6 +1,10 @@
 '''
+https://school.programmers.co.kr/learn/courses/30/lessons/42747
+Lv. 2	40,551명	64%
+
 1시간 16분 소요. 사실상 틀린문제,
 0일 때 처리를 해주어야 한다.
+수학 문제처럼 패턴 분석하여 공식 도출해야됨
 '''
 def solution(citations):
     h = max(citations)
@@ -31,7 +35,7 @@ def solution(citations):
         if citations[i] >= l-i:
             return l-i
     return 0
-        
+     
 print(solution([3,0,6,1,5]))
 print(solution([3,0,6,1,3,5]))
 print(solution([0,0]))

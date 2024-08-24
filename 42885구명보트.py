@@ -1,3 +1,11 @@
+''' 
+https://school.programmers.co.kr/learn/courses/30/lessons/42885
+탐욕법(Greedy)
+Lv. 2	28,718명	69%
+몸무게 큰사람은 어차피 for문 한번마다 제거되므로, 내림차순 정렬
+작은 사람은 limit이하일 때에만 제거됨. 이미 제거되면 카운트할 필요 없기 때문에 pop()
+'''
+
 # def solution(people, limit):
 #     boat = 0
 #     weight = 0
@@ -35,6 +43,7 @@
             
     
 #     return boat
+# 다른 사람 풀이
 def solution(people, limit):
     boat = 0
     people.sort(reverse = True)
@@ -50,6 +59,23 @@ def solution(people, limit):
     
     return boat
 
+# 재 풀이 23.12.11 실패
+# def solution(people, limit):
+#     boat = 0
+#     people.sort()
+#     chk = [False] * len(people)
+#     i = 0
+#     small = people[i]
+#     for j in range(len(people)-1, i, -1):
+#         if small + people[j] <= limit:
+#             chk[i] = True
+#             i += 1
+    
+#         boat += 1
+#         chk[j] = True
+    
+#     if not chk[i]: return boat + 1
+#     return boat 
 
 
 print(solution([70,80,50], 100))
