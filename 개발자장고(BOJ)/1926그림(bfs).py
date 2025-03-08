@@ -13,10 +13,10 @@ E: V * 4 (V하나에 4개라 넉넉잡아)
 # 자료구조
 - 그래프 전체 지도: int[][]
 - 방문: bool[][]
-- 뼈뎓(BFS)
+- Queue(BFS)
 
 '''
-import sys  # 입출력 바르게 하는코드 습관화
+import sys  # 입출력 빠르게 하는 코드 습관화
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
