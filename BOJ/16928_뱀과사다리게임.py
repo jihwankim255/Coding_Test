@@ -28,17 +28,6 @@ from collections import deque
 
 N, M = map(int, input().split())
 
-# plus = [list(map(int,input().strip().split())) for _ in range(N)]
-# minus = [list(map(int,input().strip().split())) for _ in range(M)]
-
-# plus.sort(key= lambda x:x[1])
-# minus.sort(key= lambda x:x[1])
-
-# print(plus)
-# print(minus)
-
-# graph = [[i + 1 + j*10 for i in range(10)]  if j % 2 == 0 else list(reversed([i + 1 + j*10 for i in range(10)])) for j in range(10)]
-
 current = 1
 visited = [False] * 101
 keys = []
