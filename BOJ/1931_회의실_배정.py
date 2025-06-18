@@ -10,4 +10,18 @@ N = int(input())
 
 arr = [tuple(map(int, input().split()))for _ in range(N)]
 arr.sort(key=lambda x:(x[1], x[0]))
-print(arr)
+end = arr[0][1]
+count = 1
+for i in range(1, N):
+    if end <= arr[i][0]:
+        end = arr[i][1]
+        count += 1
+print(count)
+
+'''
+1 4
+5 7
+8 11
+12 14
+
+'''
