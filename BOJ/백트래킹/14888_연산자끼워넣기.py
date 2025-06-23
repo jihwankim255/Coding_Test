@@ -65,6 +65,10 @@ print(min(rs))
 계산 하고 최대값 최솟값을 구하면됨
 
 필터하는법 공부해야함
+lst = [1,2,3,4,5]
+list.remove(3)
+new_lsit = list(filter(lambda x:x != 3, list))
+new_list = [x for x in list if x != 3]
 '''
 '''
 다른 풀이
