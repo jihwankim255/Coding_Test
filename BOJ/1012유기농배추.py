@@ -6,8 +6,8 @@ dfs
 
 '''
 
-# n, m = map(int, input().split())
-# arr = [list(map(int, input())) for _ in range(m)]
+n, m = map(int, input().split())
+arr = [list(map(int, input())) for _ in range(m)]
 
 
 T = int(input())
